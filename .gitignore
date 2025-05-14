@@ -1,0 +1,13 @@
+/Library/
+/Temp/
+/Obj/
+/Logs/
+/Build/
+/Assets/StreamingAssets/AssetBundles/
+/.vs/
+/Assets/Save/
+*.csproj
+*.sln
+**/ProjectSettings.asset
+*.dwlt
+/Assets/Resources/Fonts/
