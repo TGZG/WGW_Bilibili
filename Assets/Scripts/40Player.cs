@@ -14,12 +14,12 @@ namespace CMKZ.风神界 {
             按住快捷键[KeyCode.S] += () => transform.position += new Vector3(0, -Speed * Time.deltaTime);
             按住快捷键[KeyCode.A] += () => transform.position += new Vector3(-Speed * Time.deltaTime, 0);
             按住快捷键[KeyCode.D] += () => transform.position += new Vector3(Speed * Time.deltaTime, 0);
-            按住快捷键[KeyCode.W] += () => GetComponent<SpriteRenderer>().sprite = AllSprite["玩家_后"];
-            按住快捷键[KeyCode.S] += () => GetComponent<SpriteRenderer>().sprite = AllSprite["玩家_前"];
+            按住快捷键[KeyCode.W] += () => GetComponent<SpriteRenderer>().sprite = AllSprite["玩家_上"];
+            按住快捷键[KeyCode.S] += () => GetComponent<SpriteRenderer>().sprite = AllSprite["玩家_下"];
             按住快捷键[KeyCode.A] += () => GetComponent<SpriteRenderer>().sprite = AllSprite["玩家_左"];
             按住快捷键[KeyCode.D] += () => GetComponent<SpriteRenderer>().sprite = AllSprite["玩家_右"];
             gameObject.transform.position = transform.position.SetZ(Z层级);
-            gameObject.AddComponent<SpriteRenderer>().sprite = AllSprite["玩家_前"];
+            gameObject.AddComponent<SpriteRenderer>().sprite = AllSprite["玩家_下"];
             gameObject.SetCameraFollow();
         }
         public void Update() {
